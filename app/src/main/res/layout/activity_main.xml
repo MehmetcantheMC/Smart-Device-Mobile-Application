@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="List Paired Devices Via Bluetooth"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="100dp"
+        android:layout_marginHorizontal="20dp"
+        />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/title"
+            android:gravity="center"
+            android:layout_marginTop="-100dp"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/find"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/send"
+                android:layout_toLeftOf="@id/send"
+                android:text="List Devices" />
+
+            <Spinner
+                android:id="@+id/devicesList"
+                android:layout_width="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp" />
+            <Button
+                android:id="@+id/open"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/devicesList"
+                android:layout_marginLeft="10dip"
+                android:text="Connect to SELECTED DEVICE" />
+
+            <TextView
+                android:id="@+id/label"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:text="Message Field" />
+
+            <EditText
+                android:id="@+id/entry"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/label"
+                android:background="@android:drawable/editbox_background"
+                android:minHeight="48dp"
+                android:layout_marginHorizontal="20dp"
+                />
+
+            <TextView
+                android:id="@+id/data"
+                android:layout_below="@id/open"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:text="Send message to see details" />
+
+            <Button
+                android:id="@+id/send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Send Message" />
+
+
+            <Button
+                android:id="@+id/action1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/devicesList"
+                android:text="LED ON" />
+
+            <Button
+                android:id="@+id/action2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/devicesList"
+                android:layout_toRightOf="@id/action1"
+                android:text="SIREN ON" />
+
+            <Button
+                android:id="@+id/action3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/devicesList"
+                android:layout_toRightOf="@id/action2"
+                android:text="TRUNK ON" />
+        </LinearLayout>
+
+</RelativeLayout>

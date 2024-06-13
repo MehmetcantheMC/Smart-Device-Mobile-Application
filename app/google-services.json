@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "661044738776",
+    "firebase_url": "https://okul-projesi-7f318-default-rtdb.firebaseio.com",
+    "project_id": "okul-projesi-7f318",
+    "storage_bucket": "okul-projesi-7f318.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:661044738776:android:31098f5b9baf960bbe75ad",
+        "android_client_info": {
+          "package_name": "com.estifie.secureconnection"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDun0JZV1EvNiXOtE7o6CEb1jGwUTE_sjw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
